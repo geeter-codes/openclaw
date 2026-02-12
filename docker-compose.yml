@@ -6,7 +6,7 @@ services:
     environment:
       # Provider (at least one required)
       #- ANTHROPIC_API_KEY=sk-ant-...
-      - ANTHROPIC_API_KEY=${{project.ANTHROPIC_API_KEY}}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
       - OPENCLAW_PRIMARY_MODEL=anthropic/claude-3-5-sonnet
       # Auth
       - AUTH_USERNAME=whatever
